@@ -4,3 +4,92 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #254e58cc, #112d32cc),
+    url(resources/gifs/city.gif);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 3.5rem;
+  left: 3.5rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.text-box {
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  line-height: 1.2;
+  text-align: center;
+  animation: moveInLeft 0.5s ease-in;
+}
+
+.heading-primary-sub {
+  margin-top: 1rem;
+  line-height: 1.2;
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  animation: moveInRight 0.5s ease-in;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
