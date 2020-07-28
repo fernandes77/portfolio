@@ -12,85 +12,302 @@
     <title>Rodrigo Fernandes | Front-End Developer</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo-box">
-        <img src="resources/imgs/logo-advantage.png" alt="logo" class="logo" />
-      </div>
-      <div class="text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary-main">Rodrigo Fernandes</span>
-          <span class="heading-primary-sub">Front-End Developer</span>
-        </h1>
-        <a href="#portfolio" class="btn btn-white btn-animated">See projects</a>
-      </div>
-    </header>
-    <section class="about-me">
-      <h2 class="sub-heading">About me</h2>
-      <div class="about-me-grid">
-        <div class="profile-picture"></div>
-        <article class="about-me-article">
-          <h3>Hello, my name is Rodrigo.</h3>
+    <div class="container">
+      <header class="header">
+        <div class="logo-box">
+          <img
+            src="resources/imgs/logo-advantage.png"
+            alt="logo"
+            class="logo"
+          />
+        </div>
+        <div class="text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary-main">Rodrigo Fernandes</span>
+            <span class="heading-primary-sub">Front-End Developer</span>
+          </h1>
+          <a href="#portfolio" class="btn btn-white btn-animated">
+            See projects
+          </a>
+        </div>
+      </header>
+
+      <section class="about-me">
+        <h2 class="sub-heading">About Me</h2>
+        <div class="about-me-content">
+          <img src="./resources/imgs/my-avatar.png" alt="My avatar" />
+          <article class="about-me-text">
+            <h3>Hello, my name is Rodrigo!</h3>
+            <p>
+              I am a self-taught web developer focused on front-end development.
+              I'm very passionate about building things that are modern and
+              maintainable long-term.
+            </p>
+            <h3>Motivated to stay ahead.</h3>
+            <p>
+              Web development technologies change every 10 (or less) years. I am
+              always looking at what is trending on the world of WebDev so that
+              the things I develop are as up-to-date as possible.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2 class="sub-heading sub-heading-skills">
+          Skills
+        </h2>
+        <div class="skills-content">
+          <div class="skills-grid-item">
+            <img src="./resources/imgs/front-end.png" alt="Basics" />
+            <h3>Basics</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skills-grid-item">
+            <img src="./resources/imgs/frameworks.png" alt="React" />
+            <h3>Frameworks</h3>
+            <ul>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Styled Components</li>
+            </ul>
+          </div>
+          <div class="skills-grid-item">
+            <img src="./resources/imgs/libraries.png" alt="Libraries" />
+            <h3>Libraries</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Semantic UI</li>
+              <li>Axios</li>
+            </ul>
+          </div>
+          <div class="skills-grid-item">
+            <img src="./resources/imgs/back-end.png" alt="Back-End" />
+            <h3>Back-end</h3>
+            <ul>
+              <li>MongoDB</li>
+              <li>Nodejs</li>
+              <li>Express</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="sub-heading">Project Portfolio</h2>
+        <div class="projects">
+          <div class="project-grid-item">
+            <div class="project">
+              <figure class="front">
+                <div class="project-polygon dev-space">
+                  <div class="project-polygon-text">
+                    <span>DevSpace Social</span>
+                  </div>
+                  <img
+                    src="./resources/gifs/dev-space.gif"
+                    alt="DevSpace gif"
+                  />
+                </div>
+                <ul class="technologies">
+                  <li>CSS</li>
+                  <hr />
+                  <li>Bootstrap</li>
+                  <hr />
+                  <li>React Hooks | Redux</li>
+                  <hr />
+                  <li>Node | Express</li>
+                  <hr />
+                  <li>MongoDB</li>
+                </ul>
+              </figure>
+              <figure class="back dev-space-back">
+                <div class="back-content">
+                  <span>
+                    A social media website for developers to interact with each
+                    other.
+                  </span>
+                  <br />
+                  <a href="#dev-space" class="btn btn-project">Demo</a>
+                </div>
+              </figure>
+            </div>
+          </div>
+
+          <div class="project-grid-item">
+            <div class="project">
+              <figure class="front">
+                <div class="project-polygon grasner">
+                  <div class="project-polygon-text">
+                    <span>Twitter Clone</span>
+                  </div>
+                  <img src="./resources/gifs/grasner.gif" alt="Grasner gif" />
+                </div>
+                <ul class="technologies">
+                  <li>CSS</li>
+                  <hr />
+                  <li>React Hooks</li>
+                  <hr />
+                  <li>Styled Components</li>
+                  <hr />
+                  <li>Responsive Design</li>
+                </ul>
+              </figure>
+              <figure class="back grasner-back">
+                <div class="back-content">
+                  <span>
+                    Grasner, a responsive Twitter clone. Displays nicely on any
+                    device.
+                  </span>
+                  <br />
+                  <a href="#grasner" class="btn btn-project">Demo</a>
+                </div>
+              </figure>
+            </div>
+          </div>
+
+          <div class="project-grid-item">
+            <div class="project">
+              <figure class="front">
+                <div class="project-polygon to-do-list">
+                  <div class="project-polygon-text">
+                    <span>To-Do-List Webapp</span>
+                  </div>
+                  <img src="./resources/gifs/check.gif" alt="To-Do-List gif" />
+                </div>
+                <ul class="technologies">
+                  <li>CSS</li>
+                  <hr />
+                  <li>Pure JavaScript</li>
+                </ul>
+              </figure>
+              <figure class="back to-do-list-back">
+                <div class="back-content">
+                  <span>
+                    A webapp for tracking your daily tasks.
+                  </span>
+                  <br />
+                  <a href="#to-do-list" class="btn btn-project">Demo</a>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <img src="./resources/imgs/logo-advantage.png" alt="Logo" />
+        <div class="footer-text">
+          <span>
+            <a
+              href="https://github.com/fernandes77"
+              target="_blank"
+              class="footer-link"
+              >GitHub</a
+            >
+          </span>
+          <span>
+            Site by <a href="#" class="footer-link">Rodrigo Fernandes</a>
+          </span>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/rodrigo-fernandes-bb2956192/"
+              target="_blank"
+              class="footer-link"
+            >
+              LinkedIn
+            </a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Modal boxes -->
+    <div class="modal" id="dev-space">
+      <div class="modal-content">
+        <a href="#portfolio" class="modal-close">&times;</a>
+        <img src="./resources/gifs/dev-space-demo.gif" alt="DevSpace demo" />
+        <div class="modal-text">
+          <h2>DevSpace</h2>
           <p>
-            I am a front-end web developer based in Brasília, Brazil. I create
-            and maintain beautiful and responsive websites.
+            Create a developer profile and add your experience and education to
+            it. View other developer profiles. Make posts, comment on them and
+            upvote them.
           </p>
-          <h3>Always up-to-date.</h3>
+          <a
+            href="https://dev-space-social.herokuapp.com"
+            class="btn btn-dev-space"
+            target="_blank"
+          >
+            Visit
+          </a>
+          <a
+            href="https://github.com/fernandes77/dev-space"
+            class="btn btn-dev-space"
+            target="_blank"
+          >
+            Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="grasner">
+      <div class="modal-content">
+        <a href="#portfolio" class="modal-close">&times;</a>
+        <img src="./resources/gifs/grasner-demo.gif" alt="Grasner demo" />
+        <div class="modal-text">
+          <h2>Grasner</h2>
           <p>
-            I strive to keep up with the latest technologies in web development.
-            I'm passionate about making websites as modern as possible.
+            Grasner is a Twitter design clone. It displays nicely on any device.
+            Resize the window to see the components collapsing.
           </p>
-        </article>
-      </div>
-    </section>
-    <section class="skills">'
-      <h2 class="sub-heading" id="skills-heading">Skills</h2>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <h2 class="sub-heading">Project Portfolio</h2>
-      <div class="projects">
-        <div class="project-grid-item">
-          <div class="project-item">
-            <div class="project-polygon">
-              <img
-                class="project-polygon-gif"
-                src="resources/gifs/check.gif"
-                alt="check"
-              />
-              <span>To-do list</span>
-            </div>
-            <a class="btn-seagreen" href="#">Expand</a>
-            <a class="btn-seagreen" href="#">Source code</a>
-          </div>
-        </div>
-        <div class="project-grid-item">
-          <div class="project-item">
-            <div class="project-polygon">
-              <img
-                class="project-polygon-gif"
-                src="resources/gifs/check.gif"
-                alt="check"
-              />
-              <span>To-do list</span>
-            </div>
-            <a class="btn-seagreen" href="#">Expand</a>
-            <a class="btn-seagreen" href="#">Source code</a>
-          </div>
-        </div>
-        <div class="project-grid-item">
-          <div class="project-item">
-            <div class="project-polygon">
-              <img
-                class="project-polygon-gif"
-                src="resources/gifs/check.gif"
-                alt="check"
-              />
-              <span>To-do list</span>
-            </div>
-            <a class="btn-seagreen" href="#">Expand</a>
-            <a class="btn-seagreen" href="#">Source code</a>
-          </div>
+          <a
+            href="https://grasner.netlify.app"
+            class="btn btn-grasner"
+            target="_blank"
+          >
+            Visit
+          </a>
+          <a
+            href="https://github.com/fernandes77/grasner"
+            class="btn btn-grasner"
+            target="_blank"
+          >
+            Source Code
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="modal" id="to-do-list">
+      <div class="modal-content">
+        <a href="#portfolio" class="modal-close">&times;</a>
+        <img src="./resources/gifs/to-do-list-demo.gif" alt="to-to-list demo" />
+        <div class="modal-text">
+          <h2>to-do-list</h2>
+          <p>
+            To-do-list is a webapp for productivity. Create tasks, mark them as
+            completed and delete them.
+          </p>
+          <a
+            href="https://to-do-list-webapp.netlify.app/"
+            class="btn btn-to-do-list"
+            target="_blank"
+          >
+            Visit
+          </a>
+          <a
+            href="https://github.com/fernandes77/to-do-list"
+            class="btn btn-to-do-list"
+            target="_blank"
+          >
+            Source Code
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
